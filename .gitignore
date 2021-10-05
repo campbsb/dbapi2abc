@@ -1,6 +1,13 @@
-venv
-__pycache__
-.cache
+# Pytest files
 .pytest_cache
+
+# PyCharm files
 .idea
+venv
+
+# setup files
+*.egg-info
+dist
+
+# vim backups
 *~

@@ -1,7 +1,7 @@
 # dbapi2-abc
 
 This package provides abstract classes to present an interface to
-PEP249 compliant database Connection and Cursor objects.
+[PEP249](https://www.python.org/dev/peps/pep-0249/) compliant database Connection and Cursor objects.
 
 This allows you to use type hints on functions handling database
 connections and cursors without needing to specify the specific

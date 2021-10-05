@@ -15,7 +15,7 @@ setup(
     name='dbapi2-abc',  # Required
 
     # See https://www.python.org/dev/peps/pep-0440/
-    version='1.0.0',  # Required
+    version='1.0.2',  # Required
 
     # See https://packaging.python.org/specifications/core-metadata/#summary
     description='Provide an Abstract Base Class for PEP249 compliant databases',
