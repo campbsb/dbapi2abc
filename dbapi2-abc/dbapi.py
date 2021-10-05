@@ -21,6 +21,10 @@ dbapi
 
 Implement abstract classes to present an interface to
 PEP249 compliant database Connection and Cursor objects
+
+See `PEP249
+<https://www.python.org/dev/peps/pep-0249/>`_
+
 """
 __author__ = "Steve Campbell"
 
@@ -28,8 +32,9 @@ from abc import ABC, abstractmethod
 from typing import Optional, Sequence, Union
 
 # NOTE: Don't abstract exceptions. Because the real exceptions won't inherit
-# from them and hence will not be caught by try ... except blocks.
+# from them and hence will not be caught by except statements.
 
+# Descriptions taken from https://www.python.org/dev/peps/pep-0249/
 
 class Cursor(ABC):
     """
