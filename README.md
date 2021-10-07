@@ -19,8 +19,3 @@ class MyObject():
         cur.execute("SELECT * FROM Table")
         return cur
 ```        
-  
-
-
-
-```
