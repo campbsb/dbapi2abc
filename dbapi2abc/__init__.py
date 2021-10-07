@@ -1,5 +1,5 @@
 """
-dbapi2-abc
+dbapi2abc
 ==========
 
 This package provides abstract classes to present an interface to
@@ -10,7 +10,7 @@ connections and cursors without needing to specify the specific
 backend database engine being used.
 
 ``
-from dbapi2-abc import Connection, Cursor
+from dbapi2abc import Connection, Cursor
 
 class MyObject():
     def __init__(self, db: Connection):
@@ -23,4 +23,4 @@ class MyObject():
 ``
 """
 
-from .dbapi import Connection, Cursor
+from .dbapi2abc import Connection, Cursor

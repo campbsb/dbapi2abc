@@ -12,10 +12,10 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     # See https://packaging.python.org/specifications/core-metadata/#name
-    name='dbapi2-abc',  # Required
+    name='dbapi2abc',  # Required
 
     # See https://www.python.org/dev/peps/pep-0440/
-    version='1.0.2',  # Required
+    version='1.0.3',  # Required
 
     # See https://packaging.python.org/specifications/core-metadata/#summary
     description='Provide an Abstract Base Class for PEP249 compliant databases',
@@ -29,7 +29,7 @@ setup(
     long_description_content_type='text/markdown',  # Optional (see note above)
 
     # See https://packaging.python.org/specifications/core-metadata/#home-page-optional  # noqa: E501
-    url='https://github.com/campbsb/dbapi2-abc',  # Optional
+    url='https://github.com/campbsb/dbapi2abc',  # Optional
 
     author='Steve Campbell',  # Optional
     # author_email='',  # Optional
@@ -37,10 +37,10 @@ setup(
     # List additional URLs that are relevant to your project as a dict.
     # See https://packaging.python.org/specifications/core-metadata/#project-url-multiple-use  # noqa: E501
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/campbsb/dbapi2-abc/issues',
+        'Bug Reports': 'https://github.com/campbsb/dbapi2abc/issues',
         # 'Funding': 'https://donate.pypi.org',
         'Say Thanks!': 'https://saythanks.io/to/campbsb',
-        'Source': 'https://github.com/campbsb/dbapi2-abc/',
+        'Source': 'https://github.com/campbsb/dbapi2abc/',
     },
 
     # See https://pypi.org/classifiers/
@@ -73,8 +73,8 @@ setup(
     # larger catalog.
     keywords='PEP249, Database, Database API',  # Optional
 
-    package_dir={'dbapi2-abc': 'dbapi2-abc'},
-    packages=['dbapi2-abc'],  # Required
+    package_dir={'dbapi2abc': 'dbapi2abc'},
+    packages=['dbapi2abc'],  # Required
 
     # Specify which Python versions you support. In contrast to the
     # 'Programming Language' classifiers above, 'pip install' will check this

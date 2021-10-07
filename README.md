@@ -1,4 +1,4 @@
-# dbapi2-abc
+# dbapi2abc
 
 This package provides abstract classes to present an interface to
 [PEP249](https://www.python.org/dev/peps/pep-0249/) compliant database Connection and Cursor objects.
@@ -8,7 +8,7 @@ connections and cursors without needing to specify the specific
 backend database engine being used.
 
 ```
-from dbapi2-abc import Connection, Cursor
+from dbapi2abc import Connection, Cursor
 
 class MyObject():
     def __init__(self, db: Connection):

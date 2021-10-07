@@ -1,9 +1,9 @@
 # Test using 'pytest'
-import dbapi
+from dbapi2abc import Connection, Cursor
 from typing import List, Optional, Sequence
 
 
-class TestConnection(dbapi.Connection):
+class TestConnection(Connection):
     def close(self) -> None:
         pass
 
@@ -13,11 +13,11 @@ class TestConnection(dbapi.Connection):
     def rollback(self) -> None:
         pass
 
-    def cursor(self) -> dbapi.Cursor:
+    def cursor(self) -> Cursor:
         pass
 
 
-class TestCursor(dbapi.Cursor):
+class TestCursor(Cursor):
 
     def arraysize(self) -> int:
         pass
@@ -49,9 +49,9 @@ class TestCursor(dbapi.Cursor):
 
 def test_connection():
     db = TestConnection()
-    assert isinstance(db, dbapi.Connection)
+    assert isinstance(db, Connection)
 
 
 def test_cursor():
     db = TestCursor()
-    assert isinstance(db, dbapi.Cursor)
+    assert isinstance(db, Cursor)
